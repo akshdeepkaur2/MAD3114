@@ -12,22 +12,19 @@ class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            perform(#selector(self.goToLoginscreen), with: nil, afterDelay: 5)
-            //perform(#selector(self.showNavController), with: nil, afterDelay: 5)
-            
+        perform(#selector(self.goToLoginScreen), with: nil, afterDelay: 4)
         }
-        
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-        }
+    
+    
         @objc func goToLoginScreen()
             
         {
             performSegue(withIdentifier: "showLoginScreen", sender: self)
             
         }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
         
 }

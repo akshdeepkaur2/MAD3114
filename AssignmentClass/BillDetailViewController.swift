@@ -9,7 +9,7 @@
 import UIKit
 
 class BillDetailViewController: UIViewController {
-
+    var electricityBill: Electricitybill?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +20,11 @@ class BillDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func btnBillCalculationClick(_sender: UIButton){
+        
+    }
+
+    
     
 
     /*
