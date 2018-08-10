@@ -16,8 +16,9 @@
 		9BAAEBDC211CBDA100BC6714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B789DDC211B683700B04DB1 /* AppDelegate.swift */; };
 		9BAAEBDD211CBDAF00BC6714 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B789DDE211B683700B04DB1 /* SplashViewController.swift */; };
 		9BAAEBDF211CBDCF00BC6714 /* ElectricityBill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAEBDE211CBDCF00BC6714 /* ElectricityBill.swift */; };
-		9BC6BA62211E0DD200AFB986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6BA61211E0DD200AFB986 /* Main.storyboard */; };
-		9BC6BA64211E0DFA00AFB986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC6BA63211E0DFA00AFB986 /* LaunchScreen.storyboard */; };
+		9BABABE7211E24BF005EC8A9 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BABABE6211E24BF005EC8A9 /* Contents.json */; };
+		9BABABEA211E2524005EC8A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BABABE8211E2524005EC8A9 /* Main.storyboard */; };
+		9BABABED211E257D005EC8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BABABEB211E257D005EC8A9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,9 @@
 		9B789E10211B796C00B04DB1 /* ElectricityBillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityBillsViewController.swift; sourceTree = SOURCE_ROOT; };
 		9B789E12211B7E5500B04DB1 /* BillDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailViewController.swift; sourceTree = "<group>"; };
 		9BAAEBDE211CBDCF00BC6714 /* ElectricityBill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricityBill.swift; sourceTree = "<group>"; };
-		9BC6BA61211E0DD200AFB986 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		9BC6BA63211E0DFA00AFB986 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BABABE6211E24BF005EC8A9 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/AppIcon.appiconset/Contents.json; sourceTree = "<group>"; };
+		9BABABE9211E2524005EC8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Electricitybill-master/Electricitybill/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		9BABABEC211E257D005EC8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Electricitybill-master/Electricitybill/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +114,10 @@
 				9B789E10211B796C00B04DB1 /* ElectricityBillsViewController.swift */,
 				9B789E12211B7E5500B04DB1 /* BillDetailViewController.swift */,
 				9B789DE8211B683700B04DB1 /* Info.plist */,
-				9BC6BA63211E0DFA00AFB986 /* LaunchScreen.storyboard */,
-				9BC6BA61211E0DD200AFB986 /* Main.storyboard */,
+				9BABABEB211E257D005EC8A9 /* LaunchScreen.storyboard */,
+				9BABABE8211E2524005EC8A9 /* Main.storyboard */,
 				9B789DE3211B683700B04DB1 /* Assets.xcassets */,
+				9BABABE6211E24BF005EC8A9 /* Contents.json */,
 				9B789DF0211B683700B04DB1 /* AssignmentClassTests */,
 			);
 			path = AssignmentClass;
@@ -249,8 +252,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC6BA64211E0DFA00AFB986 /* LaunchScreen.storyboard in Resources */,
-				9BC6BA62211E0DD200AFB986 /* Main.storyboard in Resources */,
+				9BABABEA211E2524005EC8A9 /* Main.storyboard in Resources */,
+				9BABABE7211E24BF005EC8A9 /* Contents.json in Resources */,
+				9BABABED211E257D005EC8A9 /* LaunchScreen.storyboard in Resources */,
 				9B789DE4211B683700B04DB1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +319,25 @@
 			targetProxy = 9B789DF9211B683700B04DB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BABABE8211E2524005EC8A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BABABE9211E2524005EC8A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BABABEB211E257D005EC8A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BABABEC211E257D005EC8A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9B789DFF211B683700B04DB1 /* Debug */ = {
