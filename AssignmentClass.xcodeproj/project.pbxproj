@@ -19,6 +19,7 @@
 		9BABABE7211E24BF005EC8A9 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BABABE6211E24BF005EC8A9 /* Contents.json */; };
 		9BABABEA211E2524005EC8A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BABABE8211E2524005EC8A9 /* Main.storyboard */; };
 		9BABABED211E257D005EC8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BABABEB211E257D005EC8A9 /* LaunchScreen.storyboard */; };
+		9BABABEF211E27AA005EC8A9 /* AssignmentClass in Resources */ = {isa = PBXBuildFile; fileRef = 9BABABEE211E27AA005EC8A9 /* AssignmentClass */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9BABABE6211E24BF005EC8A9 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/AppIcon.appiconset/Contents.json; sourceTree = "<group>"; };
 		9BABABE9211E2524005EC8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Electricitybill-master/Electricitybill/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		9BABABEC211E257D005EC8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../Downloads/Electricitybill-master/Electricitybill/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		9BABABEE211E27AA005EC8A9 /* AssignmentClass */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AssignmentClass; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				9B789DE8211B683700B04DB1 /* Info.plist */,
 				9BABABEB211E257D005EC8A9 /* LaunchScreen.storyboard */,
 				9BABABE8211E2524005EC8A9 /* Main.storyboard */,
+				9BABABEE211E27AA005EC8A9 /* AssignmentClass */,
 				9B789DE3211B683700B04DB1 /* Assets.xcassets */,
 				9BABABE6211E24BF005EC8A9 /* Contents.json */,
 				9B789DF0211B683700B04DB1 /* AssignmentClassTests */,
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BABABEF211E27AA005EC8A9 /* AssignmentClass in Resources */,
 				9BABABEA211E2524005EC8A9 /* Main.storyboard in Resources */,
 				9BABABE7211E24BF005EC8A9 /* Contents.json in Resources */,
 				9BABABED211E257D005EC8A9 /* LaunchScreen.storyboard in Resources */,
