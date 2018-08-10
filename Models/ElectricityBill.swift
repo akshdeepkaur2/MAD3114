@@ -10,7 +10,7 @@ import Foundation
 class Electricitybill{
     var customerID: Int!
     var customerName: String!
-    var Gender: String!
+    var gender: Gender!
     var totalUnit: Int = 0
     var Billdate: Date!
     var totalPayment: Double!
@@ -36,5 +36,13 @@ class Electricitybill{
         }
         return total
     }
+    enum Gender: String
+    {
+        case MALE = "Male"
+        case FEMALE = "Female"
+        case OTHER = "Other"
+    }
+    
+    
     
 }
