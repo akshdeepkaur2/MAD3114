@@ -12,9 +12,18 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var lblRememberMe: UILabel!
     @IBOutlet weak var swtSwitch: UISwitch!
-    @IBOutlet weak var btnLogin: UIButton!
+    
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtEmailAddress: UITextField!
+    @IBAction func btnlogin(_ sender: Any) {
+        if txtEmailAddress.text == "admin" && txtPassword.text == "password" {
+            performSegue(withIdentifier: "ElectricityBillViewController", sender: self)
+            
+        } else {
+            print("error")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

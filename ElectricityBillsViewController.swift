@@ -1,21 +1,27 @@
+//
+//  ElectricityBillViewController.swift
+//  Electricitybill
+//
+//  Created by Akshdeep on 08/08/18.
+//  Copyright © 2018 g. All rights reserved.
+//
+
 import UIKit
 
-class ElectricityBillViewController: UIViewController
-{
+class ElectricityBillViewController: UIViewController {
     
+    @IBOutlet weak var txtcustomerid: UITextField!
+    @IBOutlet weak var txtcustomername: UITextField!
+    @IBOutlet weak var opgender: UISegmentedControl!
+    @IBOutlet weak var date: UIDatePicker!
+    @IBOutlet weak var txtunit: UITextField!
     
-    
-    
-    @IBOutlet weak var txtCustomerName: UITextField!
-    
-    @IBOutlet weak var lblGender: UILabel!
-    @IBOutlet weak var segmentGender: UISegmentedControl!
-    var electricityBill = Electricitybill()
+    var electricitybill : ElectricityBill?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Bill Details"
+        self.navigationItem.title = "Bill data entry"
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,37 +30,20 @@ class ElectricityBillViewController: UIViewController
     }
     
     
-    @IBAction func btnCalculate(_ sender: UIButton)
-    {
-        electricityBill.customerName = txtCustomerName.text
+    @IBAction func btncalculatebill(_ sender: Any) {
+        electricitybill = electricitybill(customerID: Int(txtcustomerid.text!), customername: txtcustomername.text!, gender: sender.MALE, billdate: Date(), unitconsumed: Int(txtunit.text!), totalbillamount: 0)
         
-        if segmentGender.selectedSegmentIndex == 0
-        {
-            electricityBill.gender = .MALE
-        }
-        else if segmentGender.selectedSegmentIndex == 1
-        {
-            electricityBill.gender = .FEMALE
-        }
-        else
-        {
-            electricityBill.gender = .OTHER
-        }
-        
-        
-        
+        performSegue(withIdentifier: "seguebilldetails", sender: self)
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    override  func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destVC = segue.destination as? BillDetailViewController {
+            print("#####  \(electricitybill)")
+            destVC.electricitybill = electricitybill
+        }
 }
+
+
+
 
 

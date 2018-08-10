@@ -9,6 +9,10 @@
 import UIKit
 
 class BillDetailViewController: UIViewController {
+    @IBOutlet weak var lblGender: UILabel!
+    @IBOutlet weak var lblTotalbill: UILabel!
+    @IBOutlet weak var lblCustomerName: UILabel!
+    
     var electricityBill: Electricitybill?
     override func viewDidLoad() {
         super.viewDidLoad()
