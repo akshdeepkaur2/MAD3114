@@ -10,6 +10,7 @@ import UIKit
 
 class SplashViewController: UIViewController {
 
+    @IBOutlet weak var lblLaunch: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         perform(#selector(self.goToLoginScreen), with: nil, afterDelay: 4)
