@@ -26,6 +26,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func btnLoginClick(_ sender: UIButton){
+    
         performSegue(withIdentifier: "segueElectricirtyBillScreen", sender: self)
     }
     

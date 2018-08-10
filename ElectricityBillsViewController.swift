@@ -1,12 +1,8 @@
 import UIKit
-protocol PassDataProtocol{
-    func setTotal(totalBill: Double)
-}
-class ElectricityBillViewController: UIViewController,PassDataProtocol
+
+class ElectricityBillViewController: UIViewController
 {
-    func setTotal(totalBill: Double) {
-        <#code#>
-    }
+    
     
     
     
@@ -14,8 +10,8 @@ class ElectricityBillViewController: UIViewController,PassDataProtocol
     
     @IBOutlet weak var lblGender: UILabel!
     @IBOutlet weak var segmentGender: UISegmentedControl!
-    var electricityBill = ElectricityBill?
-    var delegate: PassDataProtocol?
+    var electricityBill = Electricitybill()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
