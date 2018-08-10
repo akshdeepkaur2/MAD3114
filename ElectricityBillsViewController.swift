@@ -2,13 +2,16 @@
 //  ElectricityBillViewController.swift
 //  Electricitybill
 //
-//  Created by Akshdeep on 08/08/18.
+//
+//  ElectricityBillViewController.swift
+//  Electricitybill
+//
+//  Created by yash on 08/08/18.
 //  Copyright © 2018 g. All rights reserved.
 //
-
 import UIKit
 
-class ElectricityBillViewController: UIViewController {
+class ElectricityBillViewController: UIViewController , Passdataprotocol {
     
     @IBOutlet weak var txtcustomerid: UITextField!
     @IBOutlet weak var txtcustomername: UITextField!
@@ -16,7 +19,9 @@ class ElectricityBillViewController: UIViewController {
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var txtunit: UITextField!
     
-    var electricitybill : ElectricityBill?
+    @IBOutlet weak var txtbillamount: UILabel!
+    
+    var electricitybill : ElectricityBill!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +36,7 @@ class ElectricityBillViewController: UIViewController {
     
     
     @IBAction func btncalculatebill(_ sender: Any) {
-        electricitybill = electricitybill(customerID: Int(txtcustomerid.text!), customername: txtcustomername.text!, gender: sender.MALE, billdate: Date(), unitconsumed: Int(txtunit.text!), totalbillamount: 0)
+        electricitybill = ElectricityBill(customerID: Int(txtcustomerid.text!), customername: txtcustomername.text!, gender: Gender.MALE, billdate: Date(), unitconsumed: Int(txtunit.text!), totalbillamount: 0)
         
         performSegue(withIdentifier: "seguebilldetails", sender: self)
     }
@@ -40,10 +45,19 @@ class ElectricityBillViewController: UIViewController {
         if let destVC = segue.destination as? BillDetailViewController {
             print("#####  \(electricitybill)")
             destVC.electricitybill = electricitybill
+            destVC.delegate = self
         }
+    }
+    
+    
+    func settotal(totalbill: Double) {
+        print("a =  class \(totalbill)")
+        txtbillamount.text = "Total Bill: $\(totalbill)"
+        
+    }
+    
+    
+    
+    
 }
-
-
-
-
 

@@ -1,50 +1,27 @@
-//
-//  ElectricityBill.swift
-//  AssignmentClass
-//
-//  Created by MacStudent on 2018-08-09.
-//  Copyright © 2018 Akshdeep. All rights reserved.
-//
 
+//  ElectricityBill.swift
+//  Electricitybill
+//
+//  Created by yash on 08/08/18.
+//  Copyright © 2018 g. All rights reserved.
+//
 import Foundation
-class Electricitybill{
-    var customerID: Int!
-    var customerName: String!
-    var gender: Gender!
-    var totalUnit: Int = 0
-    var Billdate: Date!
-    var totalPayment: Double!
-    
-        {
-        var total: Double
-         if totalUnit <= 100
-         {
-            return (Double(totalUnit) * 0.75)
-            
-        }
-        else if totalUnit < 150
-        {
-            total = Double(75) + (Double (totalUnit - 100) * 1.25)
-            
-        }
-        else if totalUnit < 200
-        {
-            total  = 137.50 + (Double(totalUnit - 150) * 1.75)
-        }
-        else {
-            total = 225.00 + (Double(totalUnit - 200) * 2.25)
-        }
-        return total
-    }
-    enum Gender: String
-    {
-        case MALE = "Male"
-        case FEMALE = "Female"
-        case OTHER = "Other"
-    }
-    
-    
-    
-    
-    
+enum Gender: String{
+    case MALE = "Male"
+    case FEMALE = "Female"
+    case OTHER = "Other"
 }
+struct ElectricityBill
+{
+    var customerID: Int?
+    var customername: String?
+    var gender: Gender?
+    var billdate : Date?
+    var unitconsumed : Int?
+    var totalbillamount: Double?
+}
+    
+    
+    
+    
+    

@@ -1,31 +1,30 @@
 //
 //  ViewController.swift
-//  AssignmentClass
+//  Electricitybill
 //
-//  Created by MacStudent on 2018-08-08.
-//  Copyright © 2018 Akshdeep. All rights reserved.
+//  Created by yash on 08/08/18.
+//  Copyright © 2018 g. All rights reserved.
 //
-
 import UIKit
 
 class SplashViewController: UIViewController {
-
-    @IBOutlet weak var lblLaunch: UILabel!
-    override func viewDidLoad() {
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        perform(#selector(self.goToLoginScreen), with: nil, afterDelay: 4)
-        }
+        perform(#selector(self.shownavcontroller), with: nil, afterDelay: 3)
+        //       perform(Selector(("shownavcontroller")), with: nil, afterDelay: 3)
+    }
     
-    
-        @objc func goToLoginScreen()
-            
-        {
-            performSegue(withIdentifier: "showLoginScreen", sender: self)
-            
-        }
-    override func didReceiveMemoryWarning() {
+    @objc func shownavcontroller()
+    {
+        performSegue(withIdentifier: "showloginscreen", sender: self)
+    }
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-        
+    
+    
 }
